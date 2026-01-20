@@ -1,10 +1,13 @@
+import { useState } from "react";
+
 export default function Home() {
-  console.log("recreating a feature from instagram");
+  const [story, setStory] = useState([]);
   return (
-    <main className="p-10">
-      <h1 className="text-blue-500 text-2xl text-center">
-        Instagram Story Features
-      </h1>
+    <main className="p-5">
+      <nav>
+        <h1 className="text-blue-500 text-lg">Instagram Story Feature Demo</h1>
+      </nav>
+      <section id="story-container">this will be the actual component</section>
     </main>
   );
 }
